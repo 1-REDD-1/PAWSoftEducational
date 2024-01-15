@@ -1,3 +1,4 @@
+import 'package:demo_frontend_flutter/operatii_transmitere_date/preia_materiale_educationale.dart';
 import 'package:flutter/material.dart';
 
 class PaginaPrincipala extends StatelessWidget {
@@ -47,7 +48,6 @@ class PaginaPrincipala extends StatelessWidget {
                                             ),
                                         ),
                                         onPressed: () {
-
                                         },
                                     ),
 
@@ -64,6 +64,20 @@ class PaginaPrincipala extends StatelessWidget {
                                         },
                                     )
                                 ],
+                            ),
+
+                            Padding (padding: EdgeInsets.only(bottom: 48)),
+
+                            ElevatedButton (
+                                child: Text (
+                                    "Preia materiale din baza de date",
+                                    style: TextStyle (
+                                        fontSize: 14
+                                    ),
+                                ),
+                                onPressed: () {
+                                    preiaToateMaterialele();
+                                },
                             ),
                         ],
                     )
